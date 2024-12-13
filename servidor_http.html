@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor HTTP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <table>
+        <thead>
+            <th>Solicitud</th>
+            <th colspan="2">Repuestas posibles</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3"><img src="01-peticion-get.png" alt="imagen de petición GET"></td>
+                <td>
+                    <img src="02-respuesta-servidor-http.png" alt="imagen de posible respuesta">
+                    <div id="respuesta1" class="respuesta">
+                        <p class="incorrecta">¡Incorrecto! 
+                            Es la respuesta del servidor al método HEAD, regresa solo el código de respuesta
+                            con la cabecera asociada a la respuesta.
+                        </p>
+                    </div>
+                </td>
+                <td><a href="#respuesta1">Elegir</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="03-respuesta-servidor-http.png" alt="imagen de posible respuesta">
+                    <div id="respuesta2" class="respuesta">
+                        <p class="incorrecta">¡Incorrecto! 
+                            Es la respuesta del servidor al método PUT donde la 
+                            solicitud almacecena información en un recurso en particular.
+                            Entonces el servidor de origen debe enviar una respuesta 201 Created.
+                        </p>
+                    </div>
+                </td>
+                <td><a href="#respuesta2">Elegir</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <img height="200" src="04-respuesta-servidor-http.png" alt="imagen de posible respuesta">
+                    <div id="respuesta3" class="respuesta">
+                        <p class="correcta">¡Correcto! 
+                            Es la respuesta del servidor al método GET, se utiliza para solo lectura.
+                            No genera cambios en el servidor. En este caso al solicitar el recurso 
+                            en example.com/contact. El servidor devuelve el recurso un código 
+                            de estado 200 OK que indica éxito y el contenido de la recurso/página solicitada.
+                        </p>
+                    </div>
+                </td>
+                <td><a href="#respuesta3">Elegir</a></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"><a href="index.html">Volver al índice de temas</a></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

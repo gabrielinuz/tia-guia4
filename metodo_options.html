@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo HTTP Método OPTIONS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <h1>Elija la funcionalidad correcta del método HTTP</h1>
+    <table>
+        <thead>
+            <th>Método HTTP</th>
+            <th colspan="2">Funcionalidad en un Web Service Restful</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="6"><mark><strong>OPTIONS</strong></mark></td>
+                <td>Elimina un recurso en específico. Ejecutar esta operación 
+                    multiple veces no tiene ningún efecto
+                    <div id="respuesta1" class="respuesta">
+                        <p class="incorrecta">¡Respuesta Incorrecta!</p>
+                    </div>
+                </td>
+                <td><a href="#respuesta1">Elegir</a></td>
+            </tr>
+            <tr>
+                <td>Regresa solo el código de respuesta y cualquier cabecera HTTP
+                    asociada con la respuesta.
+                    <div id="respuesta2" class="respuesta">
+                        <p class="incorrecta">¡Respuesta Incorrecta!</p>
+                    </div>
+                </td>
+                <td><a href="#respuesta2">Elegir</a></td>
+            </tr>
+            <tr>
+                <td>Se utiliza para operaciones de solo lectura. 
+                    No generan ningún cambio en el servidor
+                    <div id="respuesta3" class="respuesta">
+                        <p class="incorrecta">¡Respuesta Incorrecta!</p>
+                    </div>
+                </td>
+                <td><a href="#respuesta3">Elegir</a></td>
+            </tr>
+            <tr>
+                <td>Cambia la información de un recurso en el servidor.
+                    Puedo o no regresar información.
+                    <div id="respuesta4" class="respuesta">
+                        <p class="incorrecta">¡Respuesta Incorrecta!</p>
+                    </div>
+                </td>
+                <td><a href="#respuesta4">Elegir</a></td>
+            </tr>
+            <tr>
+                <td>Representa las opciones disponibles para establecer 
+                    la comunicación en el proceso de petición respuesta de una URI
+                    <div id="respuesta5" class="respuesta">
+                        <p class="correcta">¡Respuesta Correcta!</p>
+                    </div>
+                </td>
+                <td><a href="#respuesta5">Elegir</a></td>
+            </tr>
+            <tr>
+                <td>Almacena información de un recurso en particular.
+                    Ejecutar esta operación multiple veces no tiene efecto, 
+                    ya que se está almacenando la misma información 
+                    sobre el recurso
+                    <div id="respuesta6" class="respuesta">
+                        <p class="incorrecta">¡Respuesta Incorrecta!</p>
+                    </div>
+                </td>
+                <td><a href="#respuesta6">Elegir</a></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    <a href="protocolo_http.html">
+                        Volver a la autoevaluación de métodos HTTP
+                    </a>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
